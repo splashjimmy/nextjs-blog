@@ -14,6 +14,10 @@ export default function Test() {
       newSocket.emit("front-end initial emit");
     });
 
+    newSocket.on("disconnect", function () {
+      setIsSocketConnected(false);
+    });
+
     return () => newSocket.close();
   }, [setSocket]);
 
