@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -10,7 +10,10 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to{" "}
+          <a href="https://github.com/SplashThat/splartbeat" target="_blank">
+            Splartbeat!
+          </a>
         </h1>
 
         <p className="description">
@@ -18,32 +21,20 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
+          <a
+            href="https://app.mural.co/t/threehearts5042/m/threehearts5042/1633098416218/dc95019f37abc129ef938b1e556cba99d7ff1ef2?sender=u6113a6b4d7639561cf910217"
+            target="_blank"
+            className="card"
+          >
             <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>Find our planning for this heartbeat service</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="/posts/first-post" className="card">
+            <>
+              <h3>All Connections &rarr;</h3>
+              <p>See all connected in-store memory Websocket nodes</p>
+            </>
           </a>
         </div>
       </main>
@@ -54,8 +45,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
@@ -205,5 +195,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
