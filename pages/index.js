@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from "next/link";
+import Test from "./test.js";
 
 export default function Home() {
   return (
@@ -7,6 +9,8 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Test />
 
       <main>
         <h1 className="title">
